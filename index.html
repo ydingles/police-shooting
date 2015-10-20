@@ -18,14 +18,24 @@
 
     <!-- Custom files -->
     <script type="text/javascript" src="js/map.js"></script>
-    <link rel="stylesheet" href="css/main.css"/>
+    <link type="text/css" rel="stylesheet" href="css/main.css">
    
   </head>
   <body>
-    <!-- You may want to put your title and additional informaiton here -->
+        <!-- You may want to put your title and additional informaiton here -->
+    <div class="container" id="header">
+  <div class="row">
+    <div class="col-sm-12">
+        <h1>Police Shootings in America</h1>
+      <p class="description">This is a map using data gathered by <a href="http://regressing.deadspin.com/deadspin-police-shooting-database-update-were-still-go-1627414202">Deadspin</a>.</p>
+    </div>
+  </div>
+</div>
+
     <div class="container">
       <!-- This is the div that your map will go in.  You'll need to reference its id -->
       <div id="map"></div>
+      <p><i>Clicking on a circle on the map will display a summary of the shooting at that point.</i></p>
     </div>
     <script>
       
@@ -33,5 +43,50 @@
       drawMap();
       
     </script>
+
+
+  <div class="container" id="table">
+    <div class="row">
+      <div class="col-sm-12">
+
+    <!--<div class="container">
+      <div id="table">-->
+        <h2>Who Was Shot?</h2>
+        <p>The table below displays some general data gathered by <a href="http://regressing.deadspin.com/deadspin-police-shooting-database-update-were-still-go-1627414202">Deadspin</a>.</p>
+  <table border="1">
+  <!--table heading-->  
+  <thead>
+  <tr>
+    <td> </td>
+    <td>Men</td> 
+    <td>Women</td>
+  </tr> 
+  </thead> 
+
+  <tbody>
+  <tr>
+    <td>White</td>
+    <td id="wm"></td> 
+    <td id="ww"></td>
+  </tr>
+
+  <tr>
+    <td>Non-white</td>
+    <td id="nwm"></td> 
+    <td id="nww"></td>
+  </tr>
+</tbody>
+
+</table>
+<br></br>
+</div>
+</div>
+</div>
+
+
+
+
+
+
   </body>
 </html>

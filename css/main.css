@@ -1,7 +1,26 @@
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+
 /* You'll probably want to add some styles here */
 #map {
 	display:block;
-	height:800px;
+	height:500px;
 	width:100%;
 	background-color:#000000;
+	border-color:#000;
+	border-radius: 5px;
+}
+
+table {
+    display: table;
+    border:1px;
+    border-color: gray;
+    width: 100%;
+}
+
+h1 {
+	font-weight: bold;
+	color: #FFF;
+	background-color: #000;
+	padding:20px;
+	border-radius: 5px;
 }
